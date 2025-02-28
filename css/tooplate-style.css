@@ -344,39 +344,60 @@ strong {
   width: 3px;
   height: 100%;
   position: absolute;
-  left: 38px;
+  left: 32px;
 }
 
 .timeline-yr {
   background: #474559;
   border-radius: 100%;
   position: absolute;
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
+  width: 67px;
+  height: 67px;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
-.timeline-yr span {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  display: block;
-  line-height: 75px;
+.timeline-yr:has(+ .timeline-info h3:hover) {
+  background: var(--purple);
 }
 
+.timeline-yr span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  line-height: normal;
+}
+.timeline-yr .minus {
+  line-height: 10px;
+}
+.timeline-yr:hover {
+  background: var(--purple);
+}
 .timeline-info {
   display: inline-block;
   vertical-align: top;
   max-width: 432px;
-  margin-left: 6em;
+  margin-left: 5.5rem;
+}
+.timeline-yr:hover + .timeline-info h3 {
+  color: var(--purple);
+}
+.timeline-info h3:hover {
+  color: var(--purple);
 }
 .timeline-info small {
-  color: #474559;
   font-size: 16px;
   font-weight: bold;
   display: inline-block;
   vertical-align: middle;
   margin-left: 15px;
+}
+
+.timeline-info small.no-margin {
+  margin: 0;
 }
 
 .owl-carousel .owl-nav span {
@@ -454,7 +475,7 @@ strong {
   border-color: var(--purple);
 }
 .contact-form .submit-btn {
-  background: var(--purple);
+  background: #474559;
   border-radius: 50px;
   color: #ffffff;
   font-weight: bold;
@@ -463,7 +484,7 @@ strong {
   transition: all 0.4s ease;
 }
 .contact-form .submit-btn:hover {
-  background: #474559;
+  background: var(--purple);
 }
 
 .contact-info {
