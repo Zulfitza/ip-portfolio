@@ -382,6 +382,22 @@ strong {
   max-width: 432px;
   margin-left: 5.5rem;
 }
+
+.timeline-info .title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.timeline-info .chip {
+  background: #eee;
+  color: #5b5b5b;
+  font-weight: normal;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: normal;
+}
 .timeline-yr:hover + .timeline-info h3 {
   color: var(--purple);
 }
