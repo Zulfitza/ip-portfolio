@@ -501,14 +501,9 @@ strong {
 }
 
 .contact-info {
-  background: #474559;
-  border-radius: 0 0 3px 3px;
-  position: relative;
-  bottom: 8px;
-}
-.contact-info p,
-.contact-info a {
-  color: #f7f3f3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .subtitle {
@@ -518,7 +513,7 @@ strong {
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .social-links .uil {
@@ -635,10 +630,6 @@ strong {
 
   .mobile-block {
     display: block;
-  }
-
-  .contact-info {
-    flex-direction: column;
   }
 
   .social-links li {
