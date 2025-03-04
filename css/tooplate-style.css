@@ -502,8 +502,6 @@ strong {
 
 .contact-info {
   display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .subtitle {
@@ -514,6 +512,7 @@ strong {
 .social-links {
   display: flex;
   gap: 3rem;
+  align-items: center;
 }
 
 .social-links .uil {
@@ -521,12 +520,9 @@ strong {
   fill: var(--gray);
 }
 
-.social-links .uil:first-of-type {
-  margin-top: 1px;
-}
-
-.social-links .uil:last-of-type {
-  margin-top: 2px;
+.social-links .logos {
+  display: flex;
+  gap: 1rem;
 }
 
 .social-links .uil:hover {
