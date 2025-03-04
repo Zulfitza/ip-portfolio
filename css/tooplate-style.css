@@ -530,6 +530,10 @@ strong {
   margin-top: 1px;
 }
 
+.social-links .uil:last-of-type {
+  margin-top: 2px;
+}
+
 .social-links .uil:hover {
   fill: var(--purple);
 }
