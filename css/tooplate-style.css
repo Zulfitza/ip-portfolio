@@ -28,9 +28,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-ul li {
-  list-style: none;
-}
 
 a {
   font-weight: normal;
@@ -512,6 +509,11 @@ strong {
 .contact-info p,
 .contact-info a {
   color: #f7f3f3;
+}
+
+.subtitle {
+  color: var(--gray);
+  font-weight: bold;
 }
 
 .social-links {
